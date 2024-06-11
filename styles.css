@@ -1,99 +1,42 @@
-* {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    }
-    
-    body {
-      background-color: #DFDBE5;
-      background-image: url("grayscalebackground.jpg");
-    }
-   
-    header {
-      background-color:rgb(235, 174, 241);
-      padding: 40px;
-      border-bottom: solid 5px blueviolet;
-      margin: bottom 20px;
-    }
-  
-    h1 {
-      display:inline-block;
-      width: 30%;
-    }
-  
-    nav {
-      display: inline-block;
-      width: 60%;
-      text-align:right;
-    }
-  
-    nav a {
-     background-color:blueviolet;
-      color:antiquewhite;
-      text-decoration: none;
-      padding: 10px 15px;
-      border-radius: 5px;
-      font-weight: bold;
-    }
-  
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      text-align: right;
-    }
-  
-    p { 
-      text-indent: 30px;
-    }
-  
-    main {
-      display: inline-block;
-      width: 70%;
-      background-color:rgb(248, 228, 231);
-      padding: 20px;
-      margin: top 20px;
-    }
-  
-    .headshot {
-      float:left;
-      margin-right: 20px;  
-    }
-  
-    .subheading {
-      font-size: 32px;
-      color:blueviolet;
-      text-align: center;
-    }
-    
-    h1 {
-      background-color:blueviolet;
-      color:antiquewhite;
-      text-decoration: none;
-      padding: 10px 15px;
-      border-radius: 5px;
-      text-align: center;
-     }
-   
-    h3 {
-      text-align: center;
-    }
-  
-    p {
-      color: rgb(53, 15, 133);
-      margin: 15px 0;
-      line-height: 140%;
-    }
-  
-    aside {
-      background-color: rgb(248, 228, 231);
-      width: 20%;
-      display: inline-block;
-      vertical-align: top;
-      padding: 20px
-    }
-    footer {
-      background-color:rgb(235, 174, 241);
-      padding: 5px;
-      border-top: solid 5px blueviolet;
-      text-align: center;
-    }
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main, nav {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+header, footer {
+  background-color: blueviolet;
+  padding: 24 px 0;
+}
+
+nav {
+  display: flex;
+}
+
+.logo,.link {
+  color: white
+}
+
+.logo {
+  margin-right: auto;
+}
+
+.link {
+  margin: 0 4px;
+}
+
+.my-text {
+  color:white;
+}
+
+footer { 
+  text-align: center;
+  margin-top: auto;
+}
